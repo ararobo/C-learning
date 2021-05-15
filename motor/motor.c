@@ -19,7 +19,7 @@ void motorRun(Motor_t * m,float power){
         digitalWrite(m->pin_a,LOW);
         digitalWrite(m->pin_b,HIGH);
         /*analogWriteの引数に負の数を入れるとバグるかもしれないので*-1*/
-        int output = m->pwm_output * -1;；
+        int output = m->pwm_output * -1;
         analogWrite(m->pin_pwm,output);
     }else{
         //停止
