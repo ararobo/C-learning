@@ -27,5 +27,4 @@ void motorRun(Motor_t * m,float power){
         digitalWrite(m->pin_b,LOW);
         analogWrite(m->pin_pwm,m->pwm_output);
     }
-    
 }
